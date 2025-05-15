@@ -1,5 +1,5 @@
 "use client";
-import { AlignJustify, HandPlatter, Menu, X } from "lucide-react";
+import { AlignJustify, HandPlatter, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";

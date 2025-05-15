@@ -73,7 +73,7 @@ export default function About() {
       <div className="responsive-padding py-10 lg:py-17">
         <div className="block lg:hidden mb-4">
           <h2 className="sub-title text-link-active text-center">
-            // ABOUT US
+            {"// ABOUT US"}
           </h2>
           <h1 className="title text-dark-bg text-center w-full md:w-2/3 lg:w-1/2 md:mx-auto">
             Innovating Solar Solutions For A Sustainable Tomorrow
@@ -117,7 +117,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-2">
           <div>
             <h2 className="sub-title text-link-active text-center md:text-left">
-              // OUR VALUES
+              {'// OUR VALUES'}
             </h2>
             <h1 className="title text-dark-bg text-center md:text-left w-full md:w-2/3">
               Our Values At Solvix Solar Panel Solutions
@@ -169,7 +169,7 @@ export default function About() {
         <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-2">
           <div className="w-full lg:w-1/2">
             <h2 className="sub-title text-link-active text-center lg:text-left">
-              // GALLERY
+              {'// GALLERY'}
             </h2>
             <h1 className="title text-container text-center lg:text-left w-2/3 mx-auto lg:mx-0">
               See The Power Of Solar In Action
@@ -237,7 +237,7 @@ export default function About() {
 
       {/* team */}
       <div className="responsive-padding py-10 lg:py-20">
-        <h2 className="sub-title text-link-active text-center">// OUR TEAM</h2>
+        <h2 className="sub-title text-link-active text-center">{'// OUR TEAM'}</h2>
         <h1 className="title text-dark-bg text-center">Meet Our Best Team</h1>
         <p className="text-textGray text-sm lg:text-base text-center mt-2">
           Passionate experts driving the future of solar energy
