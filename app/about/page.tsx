@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div>
+    <>
       {/* hero */}
       <div className="responsive-padding py-10">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center">
@@ -314,6 +314,6 @@ export default function About() {
         </div>
       </div>
       <CTA type="about"/>
-    </div>
+    </>
   );
 }
