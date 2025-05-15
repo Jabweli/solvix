@@ -5,7 +5,7 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="responsive-padding py-10 md:py-10">
-      <h2 className="sub-title text-link-active text-center">// BLOG</h2>
+      <h2 className="sub-title text-link-active text-center">{'// BLOG'}</h2>
       <h1 className="title text-textBlack text-center w-full md:w-2/3 lg:w-1/2 md:mx-auto">
         Stay Informed With Expert Insights, Tips About Solar Energy
       </h1>

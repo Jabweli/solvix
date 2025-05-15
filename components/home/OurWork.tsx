@@ -6,7 +6,7 @@ const OurWork = () => {
     <div className="responsive-padding bg-dark-bg py-8 md:py-15">
       <div className="block md:hidden mb-6">
         <h2 className="sub-title text-link-active text-center md:text-left">
-          // OUR WORK
+          {'// OUR WORK'}
         </h2>
         <h1 className="title text-center md:text-left text-container w-2/3 mx-auto">
           Switching To Solar In 3 Easy Steps

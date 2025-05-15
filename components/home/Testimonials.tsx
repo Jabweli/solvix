@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <div className="responsive-padding py-10 md:py-20">
       <h2 className="sub-title text-link-active text-center">
-        // TESTIMONIALS
+        {'// TESTIMONIALS'}
       </h2>
       <h1 className="title text-textBlack text-center">Success Stories</h1>
 

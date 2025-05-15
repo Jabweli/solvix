@@ -4,7 +4,7 @@ import React from "react";
 const SolarSolutions = () => {
   return (
     <div className="responsive-padding py-10 md:py-20">
-      <h2 className="sub-title text-link-active text-center">// SERVICES</h2>
+      <h2 className="sub-title text-link-active text-center">{'// SERVICES'}</h2>
       <h1 className="title text-textBlack text-center">Our Solar Solutions</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 lg:mt-16">

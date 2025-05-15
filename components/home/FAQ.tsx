@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
-import { ChevronDown, Minus, Plus } from "lucide-react";
 
 const FAQ = () => {
   return (

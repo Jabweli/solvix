@@ -7,7 +7,7 @@ const Benefits = () => {
     <div className="flex flex-col md:flex-row gap-x-16 gap-y-6 bg-dark-bg responsive-padding py-16">
       <div className="flex-1 flex flex-col md:justify-between">
         <div className="text-center md:text-left">
-          <h2 className="sub-title text-subheading">// BENEFITS</h2>
+          <h2 className="sub-title text-subheading">{'// BENEFITS'}</h2>
           <h1 className="title text-container">The Benefits Of Going Solar With Solvix</h1>
         </div>
         <p className="text-textLight text-[15px] text-center md:text-left mt-4">
