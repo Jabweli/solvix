@@ -94,7 +94,7 @@ export default function About() {
 
           <div className="flex flex-col justify-between gap-y-8">
             <div className="hidden lg:block">
-              <h2 className="sub-title text-link-active">// ABOUT US</h2>
+              <h2 className="sub-title text-link-active">{'// ABOUT US'}</h2>
               <h1 className="title text-dark-bg w-full">
                 Innovating Solar Solutions For A Sustainable Tomorrow
               </h1>

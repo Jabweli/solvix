@@ -9,7 +9,7 @@ import {
 const FAQ = () => {
   return (
     <div className="responsive-padding py-10 lg:py-20">
-      <h2 className="sub-title text-link-active text-center">// FAQ</h2>
+      <h2 className="sub-title text-link-active text-center">{'// FAQ'}</h2>
       <h1 className="title text-textBlack text-center">
         Frequently Asked Questions
       </h1>

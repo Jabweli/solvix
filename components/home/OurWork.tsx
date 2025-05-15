@@ -17,7 +17,7 @@ const OurWork = () => {
         <div className="w-full md:w-6/12 lg:w-7/12">
           <div className="md:block hidden">
             <h2 className="sub-title text-link-active text-center md:text-left">
-              // OUR WORK
+              {'// OUR WORK'}
             </h2>
             <h1 className="title text-center md:text-left text-container w-full md:w-2/3 lg:w-1/2">
               Switching To Solar In 3 Easy Steps
