@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <div>
-      <div className="responsive-padding py-10">
+      <div className="responsive-padding py-10 mt-8 lg:mt-15">
         <h1 className="font-bold text-textBlack text-3xl md:text-4xl lg:text-6xl text-center">
           Our <span className="text-hgreen">Solar</span> Success{" "}
           <span className="text-hgreen">Stories</span>

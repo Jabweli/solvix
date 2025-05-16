@@ -23,7 +23,7 @@ export default async function ProjectDetails({
   console.log(project)
   return (
     <div>
-      <div className="responsive-padding py-10">
+      <div className="responsive-padding py-10 mt-8 lg:mt-15">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center">
           <span className="text-hgreen">Sustainable</span> Living{" "}
         </h1>

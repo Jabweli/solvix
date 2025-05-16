@@ -33,7 +33,7 @@ const SolutionsAccordion = () => {
           <div className="relative w-full">
             <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
               <Image
-                src="/images/img4.jpeg"
+                src="/images/img10.jpg"
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
@@ -131,7 +131,7 @@ const SolutionsAccordion = () => {
           <div className="relative w-full">
             <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
               <Image
-                src="/images/img1.jpg"
+                src="/images/img9.jpeg"
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"
@@ -161,6 +161,7 @@ const SolutionsAccordion = () => {
           </div>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-4">
         <AccordionTrigger>
           <div className="flex gap-3 flex-1">
@@ -179,7 +180,7 @@ const SolutionsAccordion = () => {
           <div className="relative w-full">
             <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
               <Image
-                src="/images/img1.jpg"
+                src="/images/img3.jpeg"
                 alt=""
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width:1200px) 50vw, 33vw"

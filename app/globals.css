@@ -92,6 +92,15 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --breakpoint-4k: 160rem;
+  --animate-navAnimation: navAnimation 600ms ease forwards;
+
+
+  @keyframes navAnimation {
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
 }
 
 @layer components {
@@ -157,4 +166,9 @@ img {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.toastify-custom .Toastify__toast--success {
+  background-color: var(--color-hgreen); /* Example: dark slate */
+  color: #ffffff;
 }

@@ -10,14 +10,14 @@ import { LuFacebook, LuLinkedin } from "react-icons/lu";
 
 export const metadata: Metadata = {
   title: "Solvix | Contact Us",
-  description: "Explore how Solvix is transforming homes, businesses, and communities with cutting-edge solar energy solutions.",
+  description:
+    "Explore how Solvix is transforming homes, businesses, and communities with cutting-edge solar energy solutions.",
 };
-
 
 export default function Contact() {
   return (
     <div>
-      <div className="responsive-padding py-10">
+      <div className="responsive-padding py-10 mt-8 lg:mt-15">
         <h1 className="font-bold text-textBlack text-3xl md:text-4xl lg:text-6xl text-center">
           Get In <span className="text-hgreen">Touch</span> With{" "}
           <span className="text-hgreen">Solvix</span>
@@ -135,6 +135,18 @@ export default function Contact() {
             <ContactForm />
           </div>
         </div>
+      </div>
+
+      <div className="w-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108897.75643671816!2d-118.3483126850188!3d34.03934217839529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sug!4v1747398717790!5m2!1sen!2sug"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
       <FAQ />

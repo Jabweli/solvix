@@ -1,9 +1,13 @@
 import CTA from "@/components/home/cta";
 import StatCounter from "@/components/StatCounter";
-import { Award } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
-import React from "react";
+import { FaAward } from "react-icons/fa6";
+import { GiLaurelsTrophy } from "react-icons/gi";
+import { SiCssdesignawards } from "react-icons/si";
+import { PiSolarPanelFill } from "react-icons/pi";
+import { FaHandshakeSimple } from "react-icons/fa6";
+import { FaHandsHoldingCircle } from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "Solvix | About",
@@ -15,7 +19,7 @@ export default function About() {
   return (
     <>
       {/* hero */}
-      <div className="responsive-padding py-10">
+      <div className="responsive-padding py-10 mt-8 lg:mt-15">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center">
           <span className="text-hgreen">Powering</span> A Brighter{" "}
           <span className="text-hgreen">Future</span>
@@ -27,7 +31,7 @@ export default function About() {
 
         <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-[80vh] mt-6 lg:mt-8">
           <Image
-            src="/images/img3.jpg"
+            src="/images/img10.jpg"
             alt="wind turbine"
             fill
             priority
@@ -38,7 +42,7 @@ export default function About() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 lg:mt-20 gap-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <Award size={60} className="text-hgreen" />
+            <FaAward size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-xl mt-3">
               Best Solar Energy Provider 2024
             </h1>
@@ -48,7 +52,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center justify-center text-center">
-            <Award size={60} className="text-hgreen" />
+            <GiLaurelsTrophy size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-xl mt-3">
               Top 10 Green Tech Leaders
             </h1>
@@ -58,7 +62,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center justify-center text-center">
-            <Award size={60} className="text-hgreen" />
+            <SiCssdesignawards size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-xl mt-3">
               Sustainability Leadership Award
             </h1>
@@ -130,7 +134,7 @@ export default function About() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-4 mt-6 lg:mt-10">
           <div className="flex flex-col bg-container p-6 rounded-sm">
-            <Award size={60} className="text-hgreen" />
+            <PiSolarPanelFill size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-2xl mt-6">
               Innovation
             </h1>
@@ -141,7 +145,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col bg-container p-6 rounded-sm">
-            <Award size={60} className="text-hgreen" />
+            <FaHandshakeSimple size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-2xl mt-6">
               Sustainability
             </h1>
@@ -152,7 +156,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col bg-container p-6 rounded-sm">
-            <Award size={60} className="text-hgreen" />
+            <FaHandsHoldingCircle size={60} className="text-hgreen" />
             <h1 className="text-hgreen font-semibold text-base lg:text-2xl mt-6">
               Customer Commitment
             </h1>
@@ -204,7 +208,7 @@ export default function About() {
           </div>
           <div className="relative w-full h-[55vh] md:h-auto order-last col-span-2 md:order-none md:row-span-2">
             <Image
-              src="/images/img6.jpg"
+              src="/images/img10.jpg"
               alt="wind turbine"
               fill
               loading="lazy"
@@ -214,7 +218,7 @@ export default function About() {
           </div>
           <div className="relative w-full h-[40vh] md:h-[60vh] lg:h-auto">
             <Image
-              src="/images/img2.jpg"
+              src="/images/img9.jpeg"
               alt="wind turbine"
               fill
               loading="lazy"
