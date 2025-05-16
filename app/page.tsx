@@ -9,7 +9,6 @@ import SolarSolutions from "@/components/home/SolarSolutions";
 import SolutionsAccordion from "@/components/home/SolutionsAccordion";
 import Testimonials from "@/components/home/Testimonials";
 
-
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
@@ -22,7 +21,12 @@ export default function Home() {
       <OurWork />
       <FAQ />
       <Blog />
-      <CTA type="home"/>
+      <CTA
+        isBgImage={false}
+        title="Get A Free Quote Today!"
+        desc="Interested in switching to solar? Let's work together to find the perfect solution for your home or bussiness."
+        isHead={true}
+      />
     </div>
   );
 }

@@ -46,10 +46,10 @@ const Testimonials = () => {
         </div>
 
         <div className="w-full md:w-30 flex justify-between px-6 md:px-0 absolute bottom-5 right-0 md:right-4 md:justify-center gap-6 mt-4">
-          <Button className="w-10 h-10 rounded-full bg-transparent border-[1px] border-dark-bg group hover:bg-dark-bg cursor-pointer">
+          <Button aria-label="previous slide" className="w-10 h-10 rounded-full bg-transparent border-[1px] border-dark-bg group hover:bg-dark-bg cursor-pointer">
             <ArrowLeft size={24} className="text-dark-bg group-hover:text-container"/>
           </Button>
-          <Button className="w-10 h-10 rounded-full border-[1px] bg-dark-bg cursor-pointer">
+          <Button aria-label="next slide" className="w-10 h-10 rounded-full border-[1px] bg-dark-bg cursor-pointer">
             <ArrowRight size={30} className="text-container"/>
           </Button>
         </div>

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaPlay } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import CustomBtn from "./CustomBtn";
 
 const Hero = () => {
   return (
@@ -57,25 +58,15 @@ const Hero = () => {
             energy that benefits both your wallet and the planet.
           </motion.p>
 
-          <motion.div
-            initial={{ x: "-2rem", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              duration: 1,
-              type: "ease-in",
-              delay: 1.6,
-            }}
-            className="flex items-center justify-center w-max gap-4 bg-dark-bg py-2 px-2 rounded-full mt-0 md:mt-6"
-          >
-            <p className="text-container text-sm pl-4">Get Free Consulation</p>
-            <Link
-              href=""
-              className="p-2 bg-container rounded-full"
-              aria-label="Get Free Consultation"
-            >
-              <ArrowUpRight className="text-dark-bg" />
-            </Link>
-          </motion.div>
+          <CustomBtn
+            text="Get Free Consultation"
+            href=""
+            iconBg="bg-container"
+            iconColor="text-dark-bg"
+            textColor="text-container"
+            bgColor="bg-dark-bg"
+            otherStyles="mt-0 md:mt-6"
+          />
         </div>
 
         <StatCounter className="mt-6" />

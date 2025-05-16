@@ -10,7 +10,7 @@ import { LuLinkedin } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-bg px-4 md:px-6 lg:px-8 xl:px-16">
+    <footer className="bg-dark-bg responsive-padding">
       <div className="flex flex-col lg:flex-row py-8 gap-8">
         <div className="w-full lg:flex-1 flex flex-col gap-4">
           <Link

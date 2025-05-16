@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full px-4 md:px-6 lg:px-8 xl:px-16 py-4 flex items-center justify-between">
+    <nav className="w-full responsive-padding py-4 flex items-center justify-between">
       <Link
         href="/"
         className="flex items-center gap-1 text-dark-bg font-bold text-2xl"
@@ -38,19 +38,20 @@ const Navbar = () => {
       </div>
 
       <Button
+        aria-label="got contact page"
         variant="outline"
         className="hidden lg:inline-block rounded-full cursor-pointer"
       >
-        Contact Us
+        <Link href="/contact">Contact Us</Link>
       </Button>
 
       <div className="flex lg:hidden">
         {isOpen ? (
-          <Button variant="outline" onClick={() => setIsOpen(false)}>
+          <Button aria-label="close menu" variant="outline" onClick={() => setIsOpen(false)}>
             <X className="text-dark-bg text-xl cursor-pointer" />
           </Button>
         ) : (
-          <Button variant="outline" onClick={() => setIsOpen(true)}>
+          <Button aria-label="open menu" variant="outline" onClick={() => setIsOpen(true)}>
             <AlignJustify className="text-dark-bg text-xl cursor-pointer" />
           </Button>
         )}

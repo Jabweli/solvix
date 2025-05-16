@@ -91,11 +91,12 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --breakpoint-4k: 160rem;
 }
 
 @layer components {
   .responsive-padding {
-    @apply px-4 md:px-8 lg:px-10 xl:px-16;
+    @apply px-4 md:px-8 lg:px-10 xl:px-16 2xl:px-32 4k:px-[20%];
   }
 
   .title {
@@ -109,6 +110,10 @@
 
 body {
   font-family: var(--font-inter), sans-serif;
+}
+
+img {
+  border-radius: 0.25rem !important;
 }
 
 .dark {
