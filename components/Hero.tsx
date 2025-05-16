@@ -1,9 +1,7 @@
 "use client";
 import StatCounter from "@/components/StatCounter";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { FaPlay } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import CustomBtn from "./CustomBtn";
