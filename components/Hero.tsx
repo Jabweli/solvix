@@ -11,11 +11,15 @@ const Hero = () => {
     <header className="h-auto md:h-screen w-full responsive-padding py-5 flex flex-col md:flex-row gap-8 mt-15">
       <div className="w-full flex flex-col justify-between md:w-1/2">
         <div className="flex items-center justify-between flex-col md:items-start md:justify-start gap-5">
-          <div className="w-max py-3 px-7 rounded-full bg-container text-center">
+          <motion.div
+            initial={{ opacity: 0, y: "-2rem" }}
+            animate={{ opacity: 1, y: 0, transition:{duration:1}}}
+            className="w-max py-3 px-7 rounded-full bg-container text-center"
+          >
             <span className="text-dark-bg font-semibold text-sm">
               New Energy For Our System
             </span>
-          </div>
+          </motion.div>
           <div className="flex flex-col">
             <motion.h1
               initial={{ y: "2rem", opacity: 0 }}

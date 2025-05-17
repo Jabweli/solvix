@@ -5,14 +5,35 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import * as motion from "framer-motion/client";
 
 const FAQ = () => {
   return (
     <div className="responsive-padding py-10 lg:py-20">
-      <h2 className="sub-title text-link-active text-center">{'// FAQ'}</h2>
-      <h1 className="title text-textBlack text-center">
+      <motion.h2
+        initial={{ opacity: 0, y: "2rem" }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 1 },
+        }}
+        viewport={{ once: true }}
+        className="sub-title text-link-active text-center"
+      >
+        {"// FAQ"}
+      </motion.h2>
+      <motion.h1
+        initial={{ opacity: 0, y: "2rem" }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 1, delay: 0.1 },
+        }}
+        viewport={{ once: true }}
+        className="title text-textBlack text-center"
+      >
         Frequently Asked Questions
-      </h1>
+      </motion.h1>
 
       <div>
         <Accordion
@@ -20,8 +41,8 @@ const FAQ = () => {
           defaultValue={["faq-1", "faq-2", "faq-3", "faq-4"]}
           className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-10"
         >
-          <AccordionItem  value="faq-1" className="border-t border-b-0">
-            <AccordionTrigger  className="text-hgreen font-semibold text-base lg:text-lg">
+          <AccordionItem value="faq-1" className="border-t border-b-0">
+            <AccordionTrigger className="text-hgreen font-semibold text-base lg:text-lg">
               What makes Solvix different from other solar providers?
             </AccordionTrigger>
             <AccordionContent>

@@ -4,34 +4,60 @@ import { Briefcase, Calendar, Hotel, MapPin } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
-
+import * as motion from "framer-motion/client";
 
 export const metadata: Metadata = {
   title: "Solvix | Project",
-  description: "Solvix solar panel installation project"
-}
+  description: "Solvix solar panel installation project",
+};
 
 export default async function ProjectDetails({
   params,
 }: {
   params: Promise<{ projectid: string }>;
 }) {
+  const slug = (await params).projectid;
 
-  const slug =(await params).projectid;
-
-  const project = projects.filter(project => project.slug === slug)[0];
-  console.log(project)
+  const project = projects.filter((project) => project.slug === slug)[0];
+  console.log(project);
   return (
     <div>
       <div className="responsive-padding py-10 mt-8 lg:mt-15">
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+          viewport={{ once: true }}
+          className="font-bold text-3xl md:text-4xl lg:text-6xl text-center"
+        >
           <span className="text-hgreen">Sustainable</span> Living{" "}
-        </h1>
-        <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center">
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, delay:0.2 },
+          }}
+          viewport={{ once: true }}
+          className="font-bold text-3xl md:text-4xl lg:text-6xl text-center"
+        >
           For <span className="text-hgreen">Community</span>
-        </h1>
+        </motion.h1>
 
-        <div className="relative w-full h-80 md:h-90 lg:h-113 mt-6 lg:mt-8 rounded-sm overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, delay: 0.4 },
+          }}
+          viewport={{ once: true }}
+          className="relative w-full h-80 md:h-90 lg:h-113 mt-6 lg:mt-8 rounded-sm overflow-hidden"
+        >
           <Image
             src={project.image}
             alt="wind turbine"
@@ -40,7 +66,7 @@ export default async function ProjectDetails({
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover"
           />
-        </div>
+        </motion.div>
       </div>
 
       <div className="responsive-padding flex flex-col-reverse md:flex-row-reversedd xl:flex-row gap-6 mb-20">
@@ -210,7 +236,9 @@ export default async function ProjectDetails({
               </div>
               <div className="flex-1 flex flex-col gap-1">
                 <h2 className="text-lg font-semibold">Date</h2>
-                <span className="text-[15px] text-textGray">{project.date}</span>
+                <span className="text-[15px] text-textGray">
+                  {project.date}
+                </span>
               </div>
             </div>
 

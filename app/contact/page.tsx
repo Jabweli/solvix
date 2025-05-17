@@ -7,6 +7,7 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
 import { LuFacebook, LuLinkedin } from "react-icons/lu";
+import * as motion from "framer-motion/client";
 
 export const metadata: Metadata = {
   title: "Solvix | Contact Us",
@@ -18,64 +19,155 @@ export default function Contact() {
   return (
     <div>
       <div className="responsive-padding py-10 mt-8 lg:mt-15">
-        <h1 className="font-bold text-textBlack text-3xl md:text-4xl lg:text-6xl text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+          viewport={{ once: true }}
+          className="font-bold text-textBlack text-3xl md:text-4xl lg:text-6xl text-center"
+        >
           Get In <span className="text-hgreen">Touch</span> With{" "}
           <span className="text-hgreen">Solvix</span>
-        </h1>
-        <p className="text-textGray text-sm lg:text-[15px] text-center mt-3 w-[95%] md:w-[60%] mx-auto">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1, delay: 0.2 },
+          }}
+          viewport={{ once: true }}
+          className="text-textGray text-sm lg:text-[15px] text-center mt-3 w-[95%] md:w-[60%] mx-auto"
+        >
           Interested in switching to solar? Have questions about our services?
           Our team is ready to help. Reach out to us today and take a first step
           towards energy independence.
-        </p>
+        </motion.p>
       </div>
 
       <div className="responsive-padding py-10 lg:py-15 bg-dark-bg">
         <div className="block md:hidden">
-          <h1 className="text-container text-2xl font-semibold">
+          <motion.h1
+            initial={{ opacity: 0, y: "2rem" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1 },
+            }}
+            viewport={{ once: true }}
+            className="text-container text-2xl font-semibold"
+          >
             Have Questions Or Need Assistance
-          </h1>
-          <p className="my-4 text-sm text-textLight">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: "2rem" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1, delay: 0.2 },
+            }}
+            viewport={{ once: true }}
+            className="my-4 text-sm text-textLight"
+          >
             We&apos;re here to help! Whether you have inquiries about our
             services, need guidance on your next steps, or require support, our
             team is ready to assist you.
-          </p>
+          </motion.p>
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center gap-x-8 gap-y-4">
           <div className="w-full md:w-1/2 lg:w-8/12">
             <div className="hidden md:block">
-              <h1 className="text-container text-2xl font-semibold">
+              <motion.h1
+                initial={{ opacity: 0, y: "2rem" }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1 },
+                }}
+                viewport={{ once: true }}
+                className="text-container text-2xl font-semibold"
+              >
                 Have Questions Or Need Assistance
-              </h1>
-              <p className="my-4 text-sm text-textLight">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: "2rem" }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 1, delay: 0.2 },
+                }}
+                viewport={{ once: true }}
+                className="my-4 text-sm text-textLight"
+              >
                 We&apos;re here to help! Whether you have inquiries about our
                 services, need guidance on your next steps, or require support,
                 our team is ready to assist you.
-              </p>
+              </motion.p>
             </div>
 
-            <div className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: "2rem" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, delay: 0.1 },
+              }}
+              viewport={{ once: true }}
+              className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2"
+            >
               <span className="text-textLight font-semibold text-[15px]">
                 Message Us
               </span>
               <span className="text-textLight text-sm">support@solvix.com</span>
-            </div>
+            </motion.div>
 
-            <div className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: "2rem" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, delay: 0.2 },
+              }}
+              viewport={{ once: true }}
+              className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2"
+            >
               <span className="text-textLight font-semibold text-[15px]">
                 Call Us
               </span>
               <span className="text-textLight text-sm">+(123) 456-789</span>
-            </div>
+            </motion.div>
 
-            <div className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: "2rem" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, delay: 0.3 },
+              }}
+              viewport={{ once: true }}
+              className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2"
+            >
               <span className="text-textLight font-semibold text-[15px]">
                 Location
               </span>
               <span className="text-textLight text-sm md:text-right">
                 4567 Elm Street, Suite 301, Green Field, TX, 78901
               </span>
-            </div>
-            <div className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2">
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: "2rem" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, delay: 0.4 },
+              }}
+              viewport={{ once: true }}
+              className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2"
+            >
               <span className="text-textLight font-semibold text-[15px]">
                 Business Hours
               </span>
@@ -88,9 +180,18 @@ export default function Contact() {
                 </span>
                 <span className="text-textLight text-sm">Sunday, closed</span>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: "2rem" }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1, delay: 0.5 },
+              }}
+              viewport={{ once: true }}
+              className="w-full flex flex-col md:flex-row md:justify-between py-6 border-b-[1px] border-textGray gap-2"
+            >
               <span className="text-textLight font-semibold text-[15px]">
                 Social Media
               </span>
@@ -124,16 +225,25 @@ export default function Contact() {
                   <LuLinkedin size={16} className="text-greenicon" />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="w-full md:w-1/2 lg:w-4/12 bg-container px-6 py-6">
+          <motion.div
+            initial={{ opacity: 0, y: "2rem" }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { duration: 1 },
+            }}
+            viewport={{ once: true }}
+            className="w-full md:w-1/2 lg:w-4/12 bg-container px-6 py-6"
+          >
             <div className="text-textBlack font-semibold text-base border-b-[1px] border-textLight pb-5">
               Fill out the form below, and our team will get back to you within
               24 hours.
             </div>
             <ContactForm />
-          </div>
+          </motion.div>
         </div>
       </div>
 

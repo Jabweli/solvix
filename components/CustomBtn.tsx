@@ -25,19 +25,18 @@ const CustomBtn = ({
   return (
     <motion.div
       initial={{ x: "-2rem", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{
-        duration: 1,
-        type: "ease-in",
-        delay: 1.6,
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { duration: 1, type: "ease-in", delay: 1 },
       }}
-      className={cn(
-        "relative py-2 px-2 rounded-full",
-        bgColor,
-        otherStyles
-      )}
+      viewport={{ once: true }}
+      className={cn("relative py-2 px-2 rounded-full", bgColor, otherStyles)}
     >
-      <Link href={href} className="flex items-center justify-center w-max gap-4">
+      <Link
+        href={href}
+        className="flex items-center justify-center w-max gap-4"
+      >
         <p className={cn("text-sm pl-4", textColor)}>{text}</p>
         <span
           className={cn("p-2 rounded-full", iconBg)}
